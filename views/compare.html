@@ -1,0 +1,14 @@
+<div class="today first">
+    <input ng-model='zipCode' placeholder="Zip Code"/></br>
+    <button ng-click="getCurrentWeather(zipCode); showme=true">get Weather</button></br>
+    <h2>{{city}}</h2>
+    <h3>{{temp}}</h3>
+    <h3 class="red">{{high}}</h3>
+    <h3 class="blue">{{low}}</h3>
+    <h3>{{humidity}}</h3>
+    <h3>{{conditions}}</h3>
+    <h3>{{sunrise}}</h3>
+    <h3>{{sunset}}</h3>
+    <img src="{{icon}}"></br>
+    <button ng-show='showme' ng-click='suggestions()'>Suggestions</button>
+</div>

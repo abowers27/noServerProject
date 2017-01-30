@@ -1,0 +1,18 @@
+<header-dir></header-dir>
+
+    <div class="multi getinfo">
+    <input ng-model='zipCode' placeholder="Zip Code" /></br>
+    <button ng-click="getSixteenDayForecast(zipCode)">get Weather</button></br>
+    </div>
+    <div>
+    <h1 class="city">{{city}}</h1>
+    <div class="multi day" ng-repeat="day in days">
+        <div><p>{{day.dt}}</p></div>
+        <div><p>Conditions: {{day.weather[0].main}}</p></div>
+        <div><p class="red">High: {{day.temp.max}} °F</p></div>
+        <div><p class="blue">Low: {{day.temp.min}} °F</p></div>
+    </div>
+    </div>
+
+
+

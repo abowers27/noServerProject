@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background-image: url(images/rainybackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: ubuntu;
+}
+
+/*Across the board styles*/
+
+.banner {
+    width: 100%;
+    height: 12vh;
+    background-color: #888;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    opacity: .5;
+    color: #222;
+}
+.main {
+    width: 100%;
+    height: 88vh;
+
+}
+.red {
+    color: #a54545;
+}
+.blue {
+    color: #4550a5;
+}
+
+/*Home Styles*/
+
+.home.banner {
+     justify-content: center;
+}
+.home.main {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.home.inner {
+    width: 35%;
+    height: 70%;
+    border: solid blue 2px;
+    background-color: #bbb;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Multi and Single*/
+
+.multi.innerbanner.left {
+    height: 100%;
+    width: 20%;
+}
+.multi.innerbanner.mid {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.multi.innerbanner.right {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+}
+.multi.gohome {
+    height: 6vh;
+}
+
+/*Seven Day Forecast Styles*/
+
+.city {
+    text-align: center;
+}
+
+.multi.getinfo {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+.multi.day {
+    width: 100%;
+    height: 100px;
+    background-color: #666;
+    opacity: .8;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 10px 0;
+}
+.multi.day div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+
+/*Today Styles*/
+
+.today.first {
+    height: 75%;
+    width: 400px;
+    background-color: #aaa;
+    margin: 20px auto;
+    opacity: .6;
+    border: solid blue 2px;
+    text-align: center;
+    line-height: 14px;
+    padding: 30px;
+}
+.comp {
+    margin: 0 auto;
+}
+.today.first img {
+    height: 100px;
+}
+.today.main{
+    text-align: center;
+}
+.today.first {
+    text-align: center;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 700px) {
+    .home.inner {
+        width: 42%;
+    }
+}
